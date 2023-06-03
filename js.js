@@ -33,7 +33,7 @@ document.addEventListener('click', function (event) {
 /*FOOTER*/
 const foot = document.getElementById('mensajes');
 const infoF = document.getElementById('infoF');
-function footCerrar(params) {
+function footCerrar() {
     infoF.style.display = 'none';
 }
 foot.addEventListener('click', () => {

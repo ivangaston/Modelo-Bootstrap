@@ -6,8 +6,8 @@
     --color-black: rgb(0, 0, 0);
     --color-grey: rgb(90, 103, 103);
     --size-04em: 0.4em;
-    --size-03em: 0.3em;
-    scroll-behavior:smooth;
+    --size-05em: 0.5em;
+    scroll-behavior: smooth;
 }
 
 .nav,
@@ -19,15 +19,11 @@ nav {
     justify-content: space-between;
 }
 
-#aMenu {
-    width: var(--size-03em);
-    margin-right: 0.2em;
-}
-
+#aMenu,
 #imgMenu {
-    margin-top: 40%;
-    width: var(--size-03em);
-    height: var(--size-03em);
+    width: 3em;
+    margin-right: var(--size-05em);
+    margin-top: var(--size-05em);
 }
 
 #imgMain {
@@ -44,8 +40,8 @@ nav {
 #listaMenu {
     position: absolute;
     display: none;
-    top: var(--size-03em);
-    right: 0.5em;
+    top: 3em;
+    right: var(--size-05em);
     padding: 0.3em;
     list-style: none;
     text-align: center;
@@ -56,12 +52,12 @@ nav {
 }
 
 ul>li>a {
-    text-decoration: none;
+    text-decoration: overline 1px rgb(17, 113, 2);
     color: rgb(227, 219, 219);
 }
 
 ul>li>a:active {
-    color: rgb(193, 6, 6);
+    color: rgb(205, 2, 2);
 }
 
 .row {
@@ -85,7 +81,7 @@ ul>li>a:active {
     -webkit-text-fill-color: rgb(227, 219, 219);
 }
 
-.section01{
+.section01 {
     text-align: center;
     padding-top: 0.6em;
     font-size: 1.8em;
@@ -93,7 +89,7 @@ ul>li>a:active {
 }
 
 /*FOOTER*/
-#footer1{
+#footer1 {
     border-radius: var(--size-04em);
     margin: 1em;
     display: flex;
@@ -101,13 +97,15 @@ ul>li>a:active {
     flex-direction: row;
     background-color: var(--color-grey);
 }
-#footer1>a>img{
+
+#footer1>a>img {
     padding: 1em;
 }
-#infoF{
-    margin-left: 0.5em;
+
+#infoF {
+    margin-left: var(--size-05em);
     float: left;
-    display: block;
+    display: none;
 }
 
 
