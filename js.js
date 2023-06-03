@@ -24,7 +24,6 @@ imgMenu.addEventListener('click', function() {
 
 document.addEventListener('click', function(event) {
     const target = event.target;
-  
     if (target !== imgMenu && !listaMenu.contains(target)) {
       menuCerrar();
     }
