@@ -4,6 +4,9 @@
 
 :root {
     --color-black: rgb(0, 0, 0);
+    --color-grey: rgb(90, 103, 103);
+    --size-04em: 0.4em;
+    --size-03em: 0.3em;
     scroll-behavior:smooth;
 }
 
@@ -17,14 +20,14 @@ nav {
 }
 
 #aMenu {
-    width: 3em;
+    width: var(--size-03em);
     margin-right: 0.2em;
 }
 
 #imgMenu {
     margin-top: 40%;
-    width: 3em;
-    height: 3em;
+    width: var(--size-03em);
+    height: var(--size-03em);
 }
 
 #imgMain {
@@ -41,7 +44,7 @@ nav {
 #listaMenu {
     position: absolute;
     display: none;
-    top: 3em;
+    top: var(--size-03em);
     right: 0.5em;
     padding: 0.3em;
     list-style: none;
@@ -49,7 +52,7 @@ nav {
     z-index: 1;
     font-size: 1.5em;
     background-color: rgba(0, 0, 0, 0.589);
-    border-radius: 0.3em;
+    border-radius: var(--size-04em);
 }
 
 ul>li>a {
@@ -67,13 +70,13 @@ ul>li>a:active {
 
 .imgA {
     width: 100%;
-    border-radius: 0.4em;
+    border-radius: var(--size-04em);
 }
 
 .car {
-    background-color: rgb(90, 103, 103);
+    background-color: var(--color-grey);
     cursor: pointer;
-    border-radius: 0.3em;
+    border-radius: var(--size-04em);
 }
 
 .car:hover {
@@ -82,12 +85,33 @@ ul>li>a:active {
     -webkit-text-fill-color: rgb(227, 219, 219);
 }
 
-p {
+.section01{
     text-align: center;
     padding-top: 0.6em;
     font-size: 1.8em;
     color: var(--color-black);
 }
+
+/*FOOTER*/
+#footer1{
+    border-radius: var(--size-04em);
+    margin: 1em;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: var(--color-grey);
+}
+#footer1>a>img{
+    padding: 1em;
+}
+#infoF{
+    margin-left: 0.5em;
+    float: left;
+    display: block;
+}
+
+
+
 
 /*MEDIA QUERIES*/
 @media (max-width: 576px) {
