@@ -135,7 +135,7 @@ a:hover {
 
 @media (max-width: 768px) {
     #contenedorImg {
-        width: 35em;
+        width: 100%;
     }
 }
 
@@ -152,22 +152,8 @@ a:hover {
     }
 
     #contenedorImg {
-        width: 30em;
+        width: 100%;
     }
-}
-
-@media (max-width: 460px) {
-    #contenedorImg {
-        width: 25em;
-    }
-
-}
-
-@media (max-width:420px) {
-    #contenedorImg {
-        width: 20em;
-    }
-
 }
 
 @media (max-width: 250px) {
