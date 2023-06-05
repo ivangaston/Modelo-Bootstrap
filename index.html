@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <link rel="stylesheet" href="./style.css">
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -22,7 +23,8 @@
             <div class="nav">
                 <nav>
                     <img src="./iconos/logo.png" alt="logo" width="auto">
-                    <a id='aMenu' href="#"><img id="imgMenu" src="./iconos/menu.png" alt="menuLogo"></a>
+                    <a id='aMenu' href="#"><img id="imgMenu"
+                            src="./iconos/menu.png" alt="menuLogo"></a>
                 </nav>
 
                 <ul id="listaMenu">
@@ -39,17 +41,21 @@
             <img id="imgMain" src="./iconos/mainn.jpg" alt="icono">
         </main>
 
-        <section class="container-xl mx-auto" id="sectionOne">
+        <section class="container-fluid" id="sectionOne">
+
             <div class='row'>
 
                 <div class="col p-3 car">
-                    <img class="imgA" src="./imagenes/tarjeta1.jpg" alt> <p
-                        class="section01">Automoviles</p>
+                    <a href="#carrusel"><img class="imgA"
+                            src="./imagenes/tarjeta1.jpg" alt> <p
+                            class="section01">Automoviles</p>
+                    </a>
                 </div>
 
                 <div class="col p-3 car">
-                    <img class="imgA" src="./imagenes/tarjeta2.jpg" alt> <p
-                        class="section01">Llantas</p>
+                    <a href="#carrusel"><img class="imgA"
+                            src="./imagenes/tarjeta2.jpg" alt> <p
+                            class="section01">Llantas</p></a>
                 </div>
 
                 <div class="col p-3 car">
@@ -58,40 +64,127 @@
                 </div>
 
             </div>
+            
         </section>
 
-        <section>
+        <section class="container-fluid" id="contenedorImg">
+
+            <div id="carrusel">
+
+                <div id="carouselExampleIndicators" class="carousel slide">
+
+                    <div class="carousel-indicators">
+
+                        <button type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1">
+
+                        </button>
+                        <button type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="1" aria-label="Slide 2">
+                        </button>
+                        <button type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="2" aria-label="Slide 3">
+                        </button>
+                        <button type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="3" aria-label="Slide 4">
+                        </button>
+                        <button type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="4" aria-label="Slide 5">
+                        </button>
+                        <button type="button"
+                            data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide-to="5" aria-label="Slide 6">
+                        </button>
+
+                    </div>
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./imagenes/modelo car 1.jpg"
+                                class="d-block w-100" alt="car1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagenes/modelo car 2.jpg"
+                                class="d-block w-100" alt="car2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagenes/modelo car 3.jpg"
+                                class="d-block w-100" alt="car3">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagenes/llanta1.jpg"
+                                class="d-block w-100" alt="wheel1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagenes/llanta2.jpg"
+                                class="d-block w-100" alt="wheel2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./imagenes/llanta3.jpg"
+                                class="d-block w-100" alt="wheel3">
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+
+            </div>
+
         </section>
 
         <footer id="footer1">
-            <a href="https://facebook.com"><img src="./iconos/facebook-circle-logo-24.png" alt="icono2">
+            <a href="https://facebook.com"><img
+                    src="./iconos/facebook-circle-logo-24.png" alt="icono2">
             </a>
 
-            <a href="https://instagram.com"><img src="./iconos/instagram-logo-24.png" alt="icono3">
+            <a href="https://instagram.com"><img
+                    src="./iconos/instagram-logo-24.png" alt="icono3">
             </a>
 
-            <a href="#infoF"><img id="mensajes" src="./iconos/message-regular-24.png" alt="icono4">
+            <a href="#infoF"><img id="mensajes"
+                    src="./iconos/message-regular-24.png" alt="icono4">
             </a>
         </footer>
 
         <section class="container-sm" id="infoF">
-            <div class="row-cols-2"><p class="col"> Numero de Telefono: 0000-0000 / WhatsApp: 11 0101-0101 </p><hr><p class="col">Buenos Aires - CABA</p>
+            <div class="row-cols-sm-1"><p class="col"> Numero de Telefono:
+                    0000-0000 / WhatsApp: 11 0101-0101 </p><hr><p class="col">Buenos
+                    Aires - CABA</p>
             </div>
         </section>
-
-
 
         <!-- Seccion Script -->
         <script src="./js.js"></script>
         <script
-                    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
-                    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
-                    crossorigin="anonymous">
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+            integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+            crossorigin="anonymous">
         </script>
         <script
-                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
-                    integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
-                    crossorigin="anonymous">
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+            integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+            crossorigin="anonymous">
         </script>
         <!-- Seccion Script -->
     </body>

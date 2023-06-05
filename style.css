@@ -26,6 +26,11 @@ nav {
     margin-top: var(--size-05em);
 }
 
+#aMenu:active {
+    transform: rotateY(180deg);
+    transition-duration: 0.1s;
+}
+
 #imgMain {
     width: 100%;
     border-bottom: 0.4em solid var(--color-black);
@@ -40,24 +45,34 @@ nav {
 #listaMenu {
     position: absolute;
     display: none;
-    top: 3em;
+    top: 3.4em;
     right: var(--size-05em);
-    padding: 0.3em;
+    padding: 0.5em;
     list-style: none;
     text-align: center;
     z-index: 1;
     font-size: 1.5em;
-    background-color: rgba(0, 0, 0, 0.589);
+    background-color: rgba(218, 218, 218, 0.409);
     border-radius: var(--size-04em);
 }
 
+section>div>div>a {
+    text-decoration: none;
+}
+
 ul>li>a {
-    text-decoration: overline 1px rgb(17, 113, 2);
-    color: rgb(227, 219, 219);
+    text-decoration: overline 1px rgba(217, 8, 8, 0.797);
+    color: var(--color-black);
 }
 
 ul>li>a:active {
-    color: rgb(205, 2, 2);
+    color: rgb(218, 218, 218);
+}
+
+#contenedorImg {
+    width: 50em;
+    margin-top: 5em;
+    margin-bottom: 3em;
 }
 
 .row {
@@ -75,7 +90,8 @@ ul>li>a:active {
     border-radius: var(--size-04em);
 }
 
-.car:hover {
+.car:hover,
+a:hover {
     transform: scale(0.98);
     transition: ease 1s;
     -webkit-text-fill-color: rgb(227, 219, 219);
@@ -108,10 +124,21 @@ ul>li>a:active {
     display: none;
 }
 
-
-
-
 /*MEDIA QUERIES*/
+
+@media (min-width: 1440px) {
+    #contenedorImg {
+        width: 90em;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #contenedorImg {
+        width: 35em;
+    }
+}
+
 @media (max-width: 576px) {
     .row {
         display: flex;
@@ -121,7 +148,26 @@ ul>li>a:active {
     #sectionOne {
         padding-left: 2em;
         padding-right: 2em;
+
     }
+
+    #contenedorImg {
+        width: 30em;
+    }
+}
+
+@media (max-width: 460px) {
+    #contenedorImg {
+        width: 25em;
+    }
+
+}
+
+@media (max-width:420px) {
+    #contenedorImg {
+        width: 20em;
+    }
+
 }
 
 @media (max-width: 250px) {
