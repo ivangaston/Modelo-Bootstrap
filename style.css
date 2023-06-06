@@ -42,6 +42,11 @@ nav {
     padding-right: 1.5em;
 }
 
+#sectionTwo {
+    margin-top: 10em;
+    margin-bottom: 5em;
+}
+
 #listaMenu {
     position: absolute;
     display: none;
@@ -52,7 +57,7 @@ nav {
     text-align: center;
     z-index: 1;
     font-size: 1.5em;
-    background-color: rgba(218, 218, 218, 0.409);
+    background-color: rgba(103, 103, 103, 0.847);
     border-radius: var(--size-04em);
 }
 
@@ -76,7 +81,7 @@ ul>li>a:active {
 }
 
 .row {
-    gap: 1.2em;
+    gap: 1em;
 }
 
 .imgA {
@@ -108,7 +113,6 @@ a:hover {
 #footer1 {
     border-radius: var(--size-04em);
     margin: 1em;
-    display: flex;
     justify-content: space-around;
     flex-direction: row;
     background-color: var(--color-grey);
@@ -123,6 +127,7 @@ a:hover {
     float: left;
     display: none;
 }
+
 
 /*MEDIA QUERIES*/
 
@@ -141,6 +146,7 @@ a:hover {
 
 @media (max-width: 576px) {
     .row {
+        padding: 1em;
         display: flex;
         flex-direction: column;
     }
@@ -154,10 +160,15 @@ a:hover {
     #contenedorImg {
         width: 100%;
     }
+
+    #sectionTwo {
+        padding:0;
+    }
 }
 
 @media (max-width: 250px) {
     p {
         font-size: 1.2em;
     }
+
 }
