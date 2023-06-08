@@ -43,7 +43,7 @@ nav {
 }
 
 #sectionTwo {
-    margin-top: 10em;
+    margin-top: 5em;
     margin-bottom: 5em;
 }
 
@@ -108,6 +108,16 @@ a:hover {
     font-size: 1.8em;
     color: var(--color-black);
 }
+#h2{
+    text-align: center;
+    text-decoration:underline;
+    margin-bottom: 2em;
+}
+form{
+    margin: 1em;
+    margin-bottom: 2em;
+}
+
 
 /*FOOTER*/
 #footer1 {
@@ -138,6 +148,20 @@ a:hover {
 
 }
 
+@media (min-width: 576px) {
+    #section1 {
+        padding-top: 2em;
+    }
+
+    #carrusel {
+        padding-top: 2em;
+    }
+
+    form{
+        width: 50%;
+    }
+}
+
 @media (max-width: 768px) {
     #contenedorImg {
         width: 100%;
@@ -162,7 +186,7 @@ a:hover {
     }
 
     #sectionTwo {
-        padding:0;
+        padding: 0;
     }
 }
 

@@ -2,16 +2,18 @@ const imgMenu = document.getElementById('imgMenu');
 const listaMenu = document.getElementById('listaMenu');
 
 /*MENU HAMBURG*/
-function menuCerrar() {
-    listaMenu.style.opacity = '0';
-    setTimeout(function () {
-        listaMenu.style.display = 'none';
-    }, 300);
-}
 
-imgMenu.addEventListener('click', function () {
-    if (listaMenu.style.display === 'none') {
+function menuAbrir() {
+    listaMenu.style.opacity = '1';
+    setTimeout(function () {
         listaMenu.style.display = 'block';
+    }, 300);
+
+    console.log(menuAbrir)
+}
+imgMenu.addEventListener('click', function () {
+    if (listaMenu.style.display === 'block') {
+        listaMenu.style.display = 'none';
         listaMenu.style.opacity = '0';
         listaMenu.style.transition = 'opacity ease 0.3s';
 
@@ -19,9 +21,10 @@ imgMenu.addEventListener('click', function () {
             listaMenu.style.opacity = '1';
         }, 5);
     } else {
-        menuCerrar();
+        menuAbrir();
     }
 });
+
 
 document.addEventListener('click', function (event) {
     const target = event.target;
@@ -33,14 +36,15 @@ document.addEventListener('click', function (event) {
 /*FOOTER*/
 const foot = document.getElementById('mensajes');
 const infoF = document.getElementById('infoF');
-function footCerrar() {
-    infoF.style.display = 'none';
+
+function footAbrir() {
+    infoF.style.display = 'block';
 }
 foot.addEventListener('click', () => {
-    if (infoF.style.display === 'none') {
-        infoF.style.display = 'block';
+    if (infoF.style.display === 'block') {
+        infoF.style.display = 'none';
     } else {
-        footCerrar()
+        footAbrir()
     }
 });
 
