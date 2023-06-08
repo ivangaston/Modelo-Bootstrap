@@ -7,6 +7,8 @@
     --color-grey: rgb(90, 103, 103);
     --size-04em: 0.4em;
     --size-05em: 0.5em;
+    --size-2em: 2em;
+    --size-5em: 5em;
     scroll-behavior: smooth;
 }
 
@@ -15,7 +17,7 @@ nav {
     display: flex;
     background-color: var(--color-black);
     width: 100%;
-    height: 5em;
+    height: var(--size-5em);
     justify-content: space-between;
 }
 
@@ -43,8 +45,11 @@ nav {
 }
 
 #sectionTwo {
-    margin-top: 5em;
-    margin-bottom: 5em;
+    margin-top: var(--size-5em);
+    margin-bottom: var(--size-5em);
+}
+#h2Serv{
+    text-align: center;
 }
 
 #listaMenu {
@@ -76,7 +81,7 @@ ul>li>a:active {
 
 #contenedorImg {
     width: 50em;
-    margin-top: 5em;
+    margin-top: var(--size-5em);
     margin-bottom: 3em;
 }
 
@@ -108,18 +113,25 @@ a:hover {
     font-size: 1.8em;
     color: var(--color-black);
 }
-#h2{
-    text-align: center;
-    text-decoration:underline;
-    margin-bottom: 2em;
+
+#h2 {
+    margin-left: 0.5em;
+    text-decoration: underline;
+    margin-bottom: var(--size-2em);
 }
-form{
+
+form {
     margin: 1em;
-    margin-bottom: 2em;
+    margin-bottom: var(--size-2em);
+}
+
+#formulario1 {
+    padding: 0;
 }
 
 
 /*FOOTER*/
+
 #footer1 {
     border-radius: var(--size-04em);
     margin: 1em;
@@ -150,15 +162,15 @@ form{
 
 @media (min-width: 576px) {
     #section1 {
-        padding-top: 2em;
+        padding-top: var(--size-2em);
     }
 
     #carrusel {
-        padding-top: 2em;
+        padding-top: var(--size-2em);
     }
 
-    form{
-        width: 50%;
+    form {
+        width: 75%;
     }
 }
 
@@ -176,8 +188,8 @@ form{
     }
 
     #sectionOne {
-        padding-left: 2em;
-        padding-right: 2em;
+        padding-left: var(--size-2em);
+        padding-right: var(--size-2em);
 
     }
 

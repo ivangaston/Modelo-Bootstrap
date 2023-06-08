@@ -56,7 +56,6 @@
                             src="./imagenes/tarjeta2.jpg" alt="seccion2"> <p
                             class="section01">Llantas</p>
                     </a>
-
                 </div>
 
                 <div class="col p-3 car">
@@ -157,7 +156,9 @@
         </section>
 
         <section class="container" id="sectionTwo">
-            <div class="row"><h2>SERVICE PARA TU AUTOMOVIL</h2>
+
+            <div class="row"><h2 id="h2Serv">SERVICE PARA TU AUTOMOVIL</h2>
+
                 <div class="col d-flex">
                     <table class="table table-striped">
                         <thead>
@@ -189,16 +190,20 @@
                                 <td>Consultar</td>
                             </tr>
                         </tbody>
-                    </table></div>
+                    </table>
+                </div>
+
             </div>
+
         </section>
 
         <h2 id="h2">Complete este formulario para recibir informacion detallada.</h2>
-        <form action method="POST">
 
-            <div class="row g-2 mb-3">
+        <form action="" method="POST">
 
-                <div class="col-md">
+            <div class="row mb-3" id="formulario1">
+
+                <div class="col">
                     <div class="form-floating ">
                         <input type="email" class="form-control"
                             id="floatingInput1" placeholder="nombre@ejemplo.com">
@@ -206,7 +211,7 @@
                     </div>
                 </div>
 
-                <div class="col-md">
+                <div class="col">
                     <div class="form-floating ">
                         <input type="email" class="form-control"
                             id="floatingInput2" placeholder="nombre@ejemplo.com">
