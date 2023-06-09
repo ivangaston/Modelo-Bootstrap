@@ -3,35 +3,33 @@ const listaMenu = document.getElementById('listaMenu');
 
 /*MENU HAMBURG*/
 
-function menuAbrir() {
-    listaMenu.style.opacity = '1';
-    setTimeout(function () {
-        listaMenu.style.display = 'block';
-    }, 300);
 
+function menuAbrir() {
+    listaMenu.style.display = 'block';
+    listaMenu.style.animation = 'opacidad 1s'
     console.log(menuAbrir)
 }
+
 imgMenu.addEventListener('click', function () {
     if (listaMenu.style.display === 'block') {
-        listaMenu.style.display = 'none';
-        listaMenu.style.opacity = '0';
-        listaMenu.style.transition = 'opacity ease 0.3s';
-
         setTimeout(function () {
-            listaMenu.style.opacity = '1';
-        }, 5);
+            listaMenu.style.display = 'none';
+        });
     } else {
         menuAbrir();
     }
 });
 
-
+function menuCerrar() {
+    listaMenu.style.display = 'none';
+}
 document.addEventListener('click', function (event) {
     const target = event.target;
     if (target !== imgMenu && !listaMenu.contains(target)) {
         menuCerrar();
     }
 });
+
 
 /*FOOTER*/
 const foot = document.getElementById('mensajes');
