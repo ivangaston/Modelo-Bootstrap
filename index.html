@@ -19,20 +19,35 @@
 
         <header>
 
-            <div class="nav">
-                <nav>
-                    <img src="./iconos/logo.png" alt="logo" width="auto">
-                    <a id='aMenu' href="#"><img id="imgMenu"
-                            src="./iconos/menu.png" alt="menuLogo"></a>
-                </nav>
+            <nav id="navv"
+                class="navbar navbar-expand-sm bg-dark border-bottom border-bottom-dark position-fixed fixed-top"
+                data-bs-theme="dark">
 
-                <ul id="listaMenu">
-                    <li><a href="#sectionOne">Secciones</a></li>
-                    <li><a href="#contenedorImg">Galeria</a></li>
-                    <li><a href="#h2">Formulario</a></li>
-                    <li><a href="#footer1">Contacto</a></li>
-                </ul>
-            </div>
+                <div class="container-fluid pe-2">
+                    <a id="carr" class="navbar-brand" href="./index.html"><img
+                            src="./iconos/logo.png" alt>
+                    </a>
+
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end "
+                        id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link " href="#lineaA">Secciones</a>
+                            <a class="nav-link" href="#lineaB">Galeria</a>
+                            <a class="nav-link" href="#lineaD">Formulario</a>
+                            <a class="nav-link" href="#footer1">Contacto</a>
+                        </div>
+                    </div>
+                </div>
+
+            </nav>
 
         </header>
 
@@ -40,26 +55,27 @@
             <img id="imgMain" src="./iconos/mainn.jpg" alt="icono">
         </main>
 
-        <section class="container-fluid " id="sectionOne">
+        <p id="lineaA" class="mb-5">A</p>
+        <section class="container-fluid  " id="sectionOne">
 
             <div class='row' id="section1">
 
                 <div class="col p-3 car">
-                    <a href="#carrusel"><img class="imgA"
+                    <a class="seccionesUno" href="#lineaB"><img class="imgA"
                             src="./imagenes/tarjeta1.jpg" alt="seccion1"> <p
                             class="section01">Automoviles</p>
                     </a>
                 </div>
 
                 <div class="col p-3 car">
-                    <a href="#carrusel"><img class="imgA"
+                    <a class="seccionesUno" href="#lineaB"><img class="imgA"
                             src="./imagenes/tarjeta2.jpg" alt="seccion2"> <p
                             class="section01">Llantas</p>
                     </a>
                 </div>
 
                 <div class="col p-3 car">
-                    <a href="#sectionTwo"><img class="imgA"
+                    <a class="seccionesUno" href="#lineaC"><img class="imgA"
                             src="./imagenes/tarjeta3.jpg" alt="seccion3"> <p
                             class="section01">Service</p>
                     </a>
@@ -69,7 +85,8 @@
 
         </section>
 
-        <section class="container-fluid" id="contenedorImg">
+        <p id="lineaB" class="mb-4">B</p>
+        <section class="container-fluid " id="contenedorImg">
 
             <div id="carrusel">
 
@@ -155,6 +172,7 @@
 
         </section>
 
+        <p id="lineaC" class="mb-4">C</p>
         <section class="container" id="sectionTwo">
 
             <div class="row"><h2 id="h2Serv">SERVICE PARA TU AUTOMOVIL</h2>
@@ -197,9 +215,9 @@
 
         </section>
 
+        <p id="lineaD" class="mb-5">D</p>
         <h2 id="h2">Complete este formulario para recibir informacion detallada.</h2>
-
-        <form action="" method="POST">
+        <form action method="POST">
 
             <div class="row mb-3" id="formulario1">
 
@@ -238,6 +256,7 @@
                     id="inlineCheckbox1" value="option1">
                 <label class="form-check-label" for="inlineCheckbox1">Vehiculos</label>
             </div>
+            
             <div class="form-check form-check-inline mb-3">
                 <input class="form-check-input" type="checkbox"
                     id="inlineCheckbox2" value="option2">
@@ -275,12 +294,13 @@
             </div>
 
             <div class="m-3 d-flex justify-content-center">
-                <input class="btn btn-primary btn-lg" type="submit" value="Submit">
+                <input class="btn btn-primary btn-lg" type="submit"
+                    value="Submit">
             </div>
 
         </form>
 
-        <footer id="footer1" class="d-flex">
+        <footer id="footer1" class="d-flex justify-content-around">
             <a href="https://facebook.com"><img
                     src="./iconos/facebook-circle-logo-24.png" alt="icono2">
             </a>
