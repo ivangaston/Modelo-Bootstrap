@@ -64,13 +64,7 @@
 .navbar>.container-xl,
 .navbar>.container-xxl {
     background-color: var(--color-black);
-    padding: var(--size-05em);
     font-size: 1.2em;
-}
-
-.navbar-brand {
-    padding: 0;
-    margin: 0;
 }
 
 .row {
@@ -83,7 +77,6 @@
 }
 
 .car {
-
     background-color: var(--color-grey);
     cursor: pointer;
     border-radius: var(--size-04em);
@@ -151,6 +144,7 @@ form {
 }
 
 @media (min-width: 576px) {
+
     #section1 {
         padding-top: var(--size-2em);
     }
