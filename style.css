@@ -21,13 +21,6 @@
 }
 
 /*ID*/
-#navv {
-    padding: 0em;
-}
-
-#carr {
-    padding: 0;
-}
 
 #imgMain {
     width: 100%;
@@ -51,7 +44,6 @@
 
 #contenedorImg {
     width: 50em;
-
     margin-bottom: 3em;
 }
 

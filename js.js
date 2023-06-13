@@ -1,3 +1,20 @@
+/*NAVBAR*/
+document.addEventListener('click', (event) => {
+    const navbarCollapse = document.querySelector('.navbar-collapse');
+    const targetElement = event.target;
+    const clickInside = navbarCollapse.contains(targetElement);
+  
+    if (!clickInside) {
+      const navbarToggler = document.querySelector('.navbar-toggler');
+      const navbarOpen = navbarCollapse.classList.contains('show');
+      
+      if (navbarOpen) {
+        navbarToggler.click();
+      }
+    }
+  });
+
+
 /*FOOTER*/
 const foot = document.getElementById('mensajes');
 const infoF = document.getElementById('infoF');
@@ -12,4 +29,5 @@ foot.addEventListener('click', () => {
         footAbrir()
     }
 });
+
 
