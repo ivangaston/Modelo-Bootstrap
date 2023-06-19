@@ -4,7 +4,7 @@
 
 :root {
     --color-black: rgb(0, 0, 0);
-    --color-grey: rgb(125, 125, 125);
+    --color-grey: rgb(122, 122, 122);
     --size-04em: 0.4em;
     --size-05em: 0.5em;
     --size-2em: 2em;
@@ -21,7 +21,6 @@
 }
 
 /*ID*/
-
 #imgMain {
     width: 100%;
     border-bottom: 0.4em solid var(--color-black);
@@ -82,7 +81,11 @@
 a:hover {
     transform: scale(0.98);
     transition: ease 1s;
-    -webkit-text-fill-color: rgb(227, 219, 219);
+
+    .section01 {
+        transform: scale(1.1);
+        transition: ease 1s;
+    }
 }
 
 .section01 {
@@ -91,6 +94,7 @@ a:hover {
     font-size: 1.8em;
     color: var(--color-black);
 }
+
 
 /*FORM*/
 #h2 {
