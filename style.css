@@ -22,7 +22,6 @@
 
 /*ID*/
 #imgMain {
-    width: 100%;
     border-bottom: 0.4em solid var(--color-black);
     margin-bottom: 1.2em;
 }
@@ -63,7 +62,6 @@
 }
 
 .imgA {
-    width: 100%;
     border-radius: var(--size-04em);
 }
 
